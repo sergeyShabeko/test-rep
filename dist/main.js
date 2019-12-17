@@ -204,7 +204,7 @@ _requests__WEBPACK_IMPORTED_MODULE_2__
 /***/ (function(module, exports) {
 
 let languageSelect = localStorage.getItem('lang') || 'en';
-let unitsTemp = localStorage.getItem('ed') || '';
+let unitsTemp = localStorage.getItem('ed') || 'si';
 let localLat = 0;
 let localLng = 0;
 let correctTime = 0;
