@@ -599,7 +599,7 @@ document.getElementById('reloadImage').addEventListener("click", function(){
 // TimeZone API 2CL1OINWLDGQ
 
 function getLocalTime(lat, lng) {
-  return fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=2CL1OINWLDGQ&format=json&by=position&lat=${lat}&lng=${lng}`).then(response => response.json()).then(coords => {
+  return fetch(`https://cors-anywhere.herokuapp.com/http://api.timezonedb.com/v2.1/get-time-zone?key=2CL1OINWLDGQ&format=json&by=position&lat=${lat}&lng=${lng}`).then(response => response.json()).then(coords => {
     return coords;
  });
 }
