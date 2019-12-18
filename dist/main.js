@@ -289,7 +289,7 @@ Array.from(document.getElementsByClassName('item_temp')).forEach((element) => {
       let weatherLocation = document.getElementById('weather_location');
       weatherLocation.innerText = location;
       removeIcon();
-      let unitsTemp = '';
+      let unitsTemp = 'us';
 
       Array.from(document.getElementsByClassName('item_temp')).forEach((element) => {
         if ( document.getElementsByClassName('active')[0].textContent == 'C') {
@@ -297,7 +297,7 @@ Array.from(document.getElementsByClassName('item_temp')).forEach((element) => {
         unitsTemp = 'si';
         localStorage.setItem('ed', unitsTemp);      
         } else {
-          unitsTemp = '';
+          unitsTemp = 'us';
           localStorage.setItem('ed', unitsTemp);
         }
       });
@@ -557,14 +557,14 @@ buttonSearch.addEventListener("click", f => {
     let weatherLocation = document.getElementById('weather_location');
     weatherLocation.innerText = location;
     removeIcon();
-    let unitsTemp = '';
+    let unitsTemp = 'us';
 
     Array.from(document.getElementsByClassName('item_temp')).forEach((element) => {
       if ( document.getElementsByClassName('active')[0].textContent == 'C') {
       unitsTemp = 'si';
       localStorage.setItem('ed', unitsTemp);
       } else {
-        unitsTemp = '';
+        unitsTemp = 'us';
         localStorage.setItem('ed', unitsTemp);
       }
     });
